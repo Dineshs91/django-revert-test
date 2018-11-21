@@ -1,0 +1,30 @@
+version: '3.3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./dockerify/app/Dockerfile
+    ports:
+      - '8090:8090'
+    tmpfs:
+      - /tmp
+    volumes:
+      - .:/app/code
+    depends_on:
+      - db
+    environment:
+      - ENV=local
+      - DEBUG=1
+      - BASE_URL=http://localhost
+      - POSTGRES_HOST=db
+      - POSTGRES_USER=blog-user
+      - POSTGRES_DB=blog
+      - POSTGRES_PASSWORD=test@123
+
+  db:
+    image: postgres:9.6
+    environment:
+      - POSTGRES_USER=blog-user
+      - POSTGRES_PASSWORD=test@123
+      - POSTGRES_DB=blog
