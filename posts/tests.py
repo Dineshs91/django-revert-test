@@ -10,8 +10,7 @@ class PostTest(TestCase):
         self.client = APIClient()
 
         post = Post.objects.create(
-            title="post1",
-            description="post1 description"
+            title="post1"
         )
 
         Comment.objects.create(

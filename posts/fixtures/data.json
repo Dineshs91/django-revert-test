@@ -4,7 +4,6 @@
     "pk": 1,
     "fields": {
       "title": "Django revert strategies",
-      "description": "How to safely handle rollback of migrations.",
       "created_at": "2018-02-02T16:59:50.920Z",
       "updated_at": "2018-02-02T20:59:50.920Z"
     }
