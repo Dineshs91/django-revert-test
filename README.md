@@ -21,6 +21,35 @@ Comment
 - created_at
 - updated_at
 
+Branch `non-destructive` has the following.
+
+Post
+- title
+- description
+- tags (Added field with null=True)
+- created_at
+- updated_at
+
+Comment
+- text
+- post
+- created_at
+- updated_at
+
+Branch 'destructive' has the following
+
+Post
+- title
+- ~~description~~ (Field removed)
+- created_at
+- updated_at
+
+Comment
+- text
+- post
+- created_at
+- updated_at
+
 ## Reset the database
 
 Use this command to reset the database.
