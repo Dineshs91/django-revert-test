@@ -8,6 +8,6 @@ until export PGPASSWORD=$POSTGRES_PASSWORD; psql -h $POSTGRES_HOST -U $POSTGRES_
 done
 
 python manage.py migrate
-
+python manage.py loaddata data.json
 
 gunicorn blog.wsgi --log-level="$log_level" -k eventlet -w 1 -b 0.0.0.0:8090 --reload
