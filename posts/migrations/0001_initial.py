@@ -19,10 +19,7 @@ class Migration(migrations.Migration):
                 ('text', models.TextField(null=True)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),
-            ],
-            options={
-                'abstract': False,
-            },
+            ]
         ),
         migrations.CreateModel(
             name='Post',
@@ -32,10 +29,7 @@ class Migration(migrations.Migration):
                 ('description', models.CharField(max_length=500)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),
-            ],
-            options={
-                'abstract': False,
-            },
+            ]
         ),
         migrations.AddField(
             model_name='comment',
