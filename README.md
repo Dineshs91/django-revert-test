@@ -21,5 +21,13 @@ Comment
 - created_at
 - updated_at
 
+## Reset the database
+
+Use this command to reset the database.
+
+`python manage.py reset_db`
+
+**Note:** This command is available from `django-extensions` package.
+
 ## References
 http://lucasroesler.com/2017/02/zero-downtime-deploys-a-tale-of-django-migrations/
