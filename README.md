@@ -3,6 +3,10 @@ Testing revert strategies in django
 
 ## Test
 
+Run tests with this command
+
+`python manage.py test --keepdb`
+
 Branch `Master` has the following models.
 
 Post
