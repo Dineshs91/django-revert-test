@@ -7,7 +7,7 @@ Run tests with this command
 
 `python manage.py test --keepdb`
 
-Branch `Master` has the following models.
+### Branch `Master` has the following models.
 
 Post
 - title
@@ -21,7 +21,7 @@ Comment
 - created_at
 - updated_at
 
-Branch `non-destructive` has the following.
+### Branch `non-destructive` has the following.
 
 Post
 - title
@@ -36,7 +36,7 @@ Comment
 - created_at
 - updated_at
 
-Branch 'destructive' has the following
+### Branch `destructive` has the following
 
 Post
 - title
